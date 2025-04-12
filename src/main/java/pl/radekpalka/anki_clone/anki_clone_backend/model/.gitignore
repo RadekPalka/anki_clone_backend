@@ -1,0 +1,32 @@
+# System plików
+.DS_Store
+Thumbs.db
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven
+/target/
+!**/src/main/resources/static/**/target/
+
+# Pliki tymczasowe
+*.log
+*.class
+*.jar
+*.war
+*.ear
+
+# System operacyjny
+*.swp
+*.swo
+*.bak
+
+# Pliki środowiskowe (opcjonalnie)
+.env
+.vscode/
+
+# Plik konfiguracyjny bazy (jeśli wolisz go nie commitować)
+# application.properties
