@@ -19,9 +19,9 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        if (!deckRepository.existsByName("PL-ENG Animals")){
+        if (!deckRepository.existsByTitle("PL-ENG Animals")){
             Deck deck = new Deck();
-            deck.setName("PL-ENG Animals");
+            deck.setTitle("PL-ENG Animals");
             deck.setAuthor("Official");
 
             List<Flashcard> flashcards = List.of(

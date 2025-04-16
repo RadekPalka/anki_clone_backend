@@ -20,16 +20,19 @@ public class DeckController {
 
     @GetMapping
     public List<Deck> getAllDecks() {
+        System.out.println("getAll");
         return deckRepository.findAll();
     }
 
     @GetMapping("/official")
     public List<Deck> getOfficialDecks() {
+        System.out.println("getofficial decks");
         return deckRepository.findByAuthor("Official");
     }
 
     @GetMapping("/{id}")
     public Deck getDeckById(@PathVariable Long id) {
+        System.out.println("getDeckById");
         return deckRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Deck not found"));
     }

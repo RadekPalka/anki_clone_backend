@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface DeckRepository extends JpaRepository<Deck, Long> {
     List<Deck> findByAuthor(String author);
-    boolean existsByName(String name);
+    boolean existsByTitle(String title);
 }
